@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="CSS/design.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form</h1>
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="gender">Geschlecht:</label><br>
+                <select id="gender" name="gender">
+                    <option></option>
+                    <option value="male">Männlich</option>
+                    <option value="female">Weiblich</option>
+                </select>
+                <br>
+                <label for="lname">Name</label>
+                <div class="input-data">
+                    <input type="text" id="lname" name="lname" required autocomplete="off">
+                </div>
+                <label for="fname">Vorname</label>
+                <div class="input-data">
+                    <input type="text" id="fname" name="fname" required autocomplete="off">
+                </div>
+                <label for="PLZ">PLZ und Ort</label>
+                <div class="input-data">
+                    <input type="text" id="PLZ" name="PLZ" required autocomplete="off">
+                </div>
+                <label for="email">E-Mail</label>
+                <div class="input-data">
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                </div>
+                <label for="Number">Nummer Privat</label>
+                <div class="input-data">
+                    <input type="number" id="Number" name="Number" required autocomplete="off">
+                </div>
+                <label for="Contaction">Bevorzugte Art der Kontaktaufnahme</label><br>
+                <select id="Contaction" name="Contaction">
+                    <option></option>
+                    <option value="EmailContact">E-Mail</option>
+                    <option value="Telephone">Telefon</option>
+                </select><br>
+                <label for="birthdate">Geburtsdatum:</label><br>
+                <input type="date" id="birthdate" name="birthdate">
+                <br>
+                
+                <label for="Motivation">Motivationsschreiben</label>
+                <div class="input-data">
+                    <textarea id="Motivation" name="Motivation" cols="35" rows="4"></textarea>
+                </div>
+                <label for="CV">Lebenslauf</label>
+                <input type="file" id="file" name="file"><br>
+                <label for="Portfolio">Link zu Portfolio</label><br>
+                <input type="url" name="Portfolio" id="Portfolio" required><br>
+                <label for="Github">Link zu Githubaccount</label><br>
+                <input type="url" name="Github" id="Github" required>
+                <br>
+                <label for="Datenschutzerklaerung">Ich akzeptiere die Datenschutz- und Nutzungsbedingungens</label>
+                <input type="checkbox" name="Datenschutzerklaerung" id="Datenschutzerklaerung" required><br>
+                <a id="datenschutz" href="datenschutz.html">Datenschutzerklärung</a><br>
+                <button type="submit">Submit <img src="/Pictures/Mailicon.png" height ="auto" width="20" /></button>
+                
+        </form> 
+    </div>
+</body>
+
+</html>
