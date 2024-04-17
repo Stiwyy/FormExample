@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 70%;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -33,7 +33,7 @@ h1 {
 }
 
 form {
-    max-width: 90%; /* Verwende Prozentwerte für die maximale Breite */
+    max-width: 70%;
     margin: 0 auto;
     animation: slideIn 0.5s ease;
 }
@@ -56,58 +56,39 @@ form {
 
 label {
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="date"],
+input[type="url"],
 textarea,
 select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
     box-sizing: border-box;
-    font-size: 16px;
-    color: #333;
+    font-size: 1rem;
+    color: #555555;
     background-color: #f9f9f9;
     transition: border-color 0.3s ease;
     animation: slideIn 0.5s ease;
+    transition: all 0.5s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus,
+input[type="url"]:focus,
 textarea:focus,
 select:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-    animation: scaleIn 0.3s ease;
-}
-
-@keyframes scaleIn {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Media Queries für spezifische Bildschirmgrößen */
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
-    }
-
-    form {
-        max-width: 90%;
-    }
+    border-color: lightblue;
+    box-shadow: 0 0 0.5rem rgba(0, 123, 255, 0.5);
+    outline: lightblue;
+    
+    transform: scale(1.05)
 }
