@@ -19,6 +19,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -43,6 +44,7 @@ form {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -89,6 +91,6 @@ select:focus {
     border-color: lightblue;
     box-shadow: 0 0 0.5rem rgba(0, 123, 255, 0.5);
     outline: lightblue;
-    
-    transform: scale(1.05)
+
+    transform: scale(1.05);
 }
