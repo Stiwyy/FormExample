@@ -104,6 +104,8 @@ input[type="date"],
 input[type="url"],
 textarea,
 select {
+    display: flex;
+    max-width: 100%;
     width: 100%;
     padding: 12px;
     border: 2px solid #DDDDDD;
