@@ -3,11 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var acceptButton = document.getElementById("accept-Button");
     var declineButton = document.getElementById("decline-Button");
     var policyAccepted = false;
-    var form = document.getElementById("Form")
-    setTimeout(function () {
-        privacyPolicy.style.display = "block";
-    }, 2000);
+    var form = document.getElementById("Form");
+    var privacyButton = document.getElementById("privacy-policy-button");
+    var submitButton = document.getElementById("submit-button");
 
+    privacyPolicy.style.display = "none";
+
+    privacyButton.addEventListener("click", function (event) {
+        privacyPolicy.style.display = "block";
+        event.preventDefault();
+    });
 
     acceptButton.addEventListener("click", function () {
         privacyPolicy.style.display = "none";
@@ -23,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handlePolicySubmit() {
         if (policyAccepted) {
+            submitButton.disabled = false;
             form.privacy.value = "true";
         }
     }
